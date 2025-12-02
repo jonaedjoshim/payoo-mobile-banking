@@ -17,7 +17,7 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/3cc97d6529.js" crossorigin="anonymous"></script>
     <!-- google font cdn -->
-    <title>Add Money</title>
+    <title>Transfer Money</title>
 </head>
 
 <body class="outfit bg-[#F4F5F7] max-w-xl mx-auto">
@@ -41,7 +41,7 @@
                 secure, and hassle-free.</p>
         </div>
         <div class="grid grid-cols-3 gap-5 px-6">
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center selected rounded-lg hover:shadow-lg">
+            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/purse1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Add Money</p>
             </div>
@@ -49,7 +49,7 @@
                 <img src="assets/send1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Cashout</p>
             </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
+            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center selected rounded-lg hover:shadow-lg">
                 <img src="assets/money1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Transfer Money</p>
             </div>
@@ -70,31 +70,25 @@
     <main>
         <section class="px-6 py-6 w-full bg-white ">
             <div>
-                <h3 class="font-bold text-2xl">Add Money</h3>
+                <h3 class="font-bold text-2xl">Transfer Money</h3>
             </div>
             <fieldset class="fieldset rounded-3xl bg-[#F4F5F7] p-6 mt-4 w-full">
-                <label class="label font-semibold text-base ml-1">Select A Bank</label>
-                <select class="select w-full rounded-3xl mb-3">
-                    <option disabled selected>Select Bank</option>
-                    <option>DBBL</option>
-                    <option>Islami Bank</option>
-                    <option>MidLand Bank</option>
-                </select>
-                <label class="label font-semibold text-base ml-1">Bank Account Number</label>
+                <label class="label font-semibold text-base ml-1">User Number</label>
                 <input type="text"
                     class="input rounded-3xl w-full mb-3 text-sm"
-                    placeholder="Enter your 11 digit account number" />
-                <label class="label font-semibold text-base ml-1">Amount to Add</label>
+                    placeholder="Enter receiver number" />
+                <label class="label font-semibold text-base ml-1">Amount</label>
                 <input type="text"
                     class="input rounded-3xl w-full mb-3 text-sm"
-                    placeholder="Enter your amount to deposit" />
+                    placeholder="Enter your amount to transfer" />
                 <label class="label font-semibold text-base ml-1 ">Pin</label>
                 <input type="password"
                     class="input rounded-3xl w-full text-sm"
                     placeholder="Enter your 4 Digit Pin" />
                 <button
-                    class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">Add
-                    Money</button>
+                    class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">
+                    CashOut
+                </button>
             </fieldset>
         </section>
     </main>
