@@ -19,7 +19,8 @@ h6,
     color: #080808;
 }
 
-p {
+p,
+.butt {
     color: rgba(8, 8, 8, 0.5);
 }
 
