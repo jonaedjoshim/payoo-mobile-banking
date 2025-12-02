@@ -2,8 +2,23 @@
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
 }
-.bg{
+
+.bg {
     background-image: url("../assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.icon {
+    color: #080808;
+}
+
+p {
+    color: rgba(8, 8, 8, 0.5);
 }
