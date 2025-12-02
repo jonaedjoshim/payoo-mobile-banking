@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../assets/payoo.png" type="image/x-icon">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/3cc97d6529.js" crossorigin="anonymous"></script>
+    <!-- google font cdn -->
+    <title>Log in</title>
+</head>
+
+<body class="outfit">
+    <section class="flex flex-col items-center text-center pt-64 h-screen">
+        <div class="relative flex justify-center items-center h-40">
+            <img src="assets/bg.png" alt="logo" class="w-[90%] mt-28" />
+            <img src="assets/Group.png" alt="logo" class="absolute bottom-14 size-[75px]" />
+        </div>
+        <fieldset class="fieldset shadow-lg rounded-3xl w-xs p-6 -mt-8">
+            <legend class="fieldset-legend font-semibold text-xl text-center">Log in</legend>
+            <label class="label font-semibold text-base text-black">Mobile Number</label>
+            <input type="email" class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
+                placeholder="Enter your number" />
+            <br>
+            <label class="label font-semibold text-base text-black">4 Digit Pin</label>
+            <input type="password"
+                class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
+                placeholder="Enter 4 Digit Pin" />
+            <button
+                class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">Log
+                in</button>
+        </fieldset>
+    </section>
+</body>
+
+</html>
