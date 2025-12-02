@@ -22,3 +22,13 @@ h6,
 p {
     color: rgba(8, 8, 8, 0.5);
 }
+
+.selected {
+    background-color: rgba(8, 116, 242, 0.05);
+    border-width: 3px;
+    border-color: #0874F2;
+}
+
+.selected p {
+    color: #0874F2;
+}
