@@ -25,7 +25,7 @@
         <div class="flex items-center justify-around gap-2">
             <img src="assets/Group.png" alt="logo">
             <div>
-                <h3 class="font-extrabold text-xl mb-2">$4500</h3>
+                <h3 class="font-extrabold text-xl mb-2" id="availableBalance">$4500</h3>
                 <p class="font-medium broder border-[#14141480]">Available Balance</p>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <p class="font-medium text-sm">Pay Bill</p>
             </button>
             <button id="transactions"
-                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg  hover:shadow-lg">
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/transaction1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Transactions</p>
             </button>
@@ -80,20 +80,25 @@
             </div>
             <fieldset class="fieldset rounded-3xl bg-[#F4F5F7] p-6 mt-4 w-full">
                 <label class="label font-semibold text-base ml-1">User Number</label>
-                <input type="text" class="input rounded-3xl w-full mb-3 text-sm" placeholder="Enter receiver number" />
+                <input type="tel" id="receiverNumber" class="input rounded-3xl w-full mb-3 text-sm"
+                    placeholder="Enter receiver number" />
+
                 <label class="label font-semibold text-base ml-1">Amount</label>
-                <input type="text" class="input rounded-3xl w-full mb-3 text-sm"
+                <input type="tel" id="transferAmount" class="input rounded-3xl w-full mb-3 text-sm"
                     placeholder="Enter your amount to transfer" />
                 <label class="label font-semibold text-base ml-1 ">Pin</label>
-                <input type="password" class="input rounded-3xl w-full text-sm" placeholder="Enter your 4 Digit Pin" />
-                <button
+                <input type="password" id="transferPin" class="input rounded-3xl w-full text-sm"
+                    placeholder="Enter your 4 Digit Pin" />
+
+                <button id="transferMoneyBtn"
                     class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">
-                    CashOut
+                    Transfer Money
                 </button>
             </fieldset>
         </section>
     </main>
     <script src="scripts/welcome.js"></script>
+    <script src="scripts/transfer.js"></script>
 </body>
 
 </html>
