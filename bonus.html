@@ -25,7 +25,7 @@
         <div class="flex items-center justify-around gap-2">
             <img src="assets/Group.png" alt="logo">
             <div>
-                <h3 class="font-extrabold text-xl mb-2">$4500</h3>
+                <h3 class="font-extrabold text-xl mb-2" id="availableBalance">$4500</h3>
                 <p class="font-medium broder border-[#14141480]">Available Balance</p>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 <img src="assets/purse1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Pay Bill</p>
             </button>
-            <button id="transactions" class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg  hover:shadow-lg">
+            <button id="transactions" class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg  hover:shadow-lg">
                 <img src="assets/transaction1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Transactions</p>
             </button>
@@ -74,9 +74,10 @@
                 <h3 class="font-bold text-2xl">Get A Bonus</h3>
             </div>
             <fieldset class="fieldset rounded-3xl bg-[#F4F5F7] p-6 mt-4 w-full">
-                <label class="label font-semibold text-base ml-1">Get Bonus</label>
-                <input type="text" class="input rounded-3xl w-full mb-3 text-sm" placeholder="Enter your coupon" />
-                <button
+                <label class="label font-semibold text-base ml-1">Enter Coupon Code</label>
+                <input type="text" id="couponCode" class="input rounded-3xl w-full mb-3 text-sm" placeholder="Enter your coupon" />
+                
+                <button id="getBonusBtn"
                     class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">
                     Get Bonus
                 </button>
@@ -84,6 +85,7 @@
         </section>
     </main>
     <script src="scripts/welcome.js"></script>
+    <script src="scripts/bonus.js"></script>
 </body>
 
 </html>
