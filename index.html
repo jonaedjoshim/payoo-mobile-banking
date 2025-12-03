@@ -26,21 +26,25 @@
             <img src="assets/bg.png" alt="logo" class="w-[90%] mt-28" />
             <img src="assets/Group.png" alt="logo" class="absolute bottom-14 size-[75px]" />
         </div>
-        <fieldset class="fieldset shadow-lg rounded-3xl w-xs p-6 -mt-8 bg-white">
-            <legend class="fieldset-legend font-semibold text-xl text-center">Log in</legend>
-            <label class="label font-semibold text-base">Mobile Number</label>
-            <input type="email" class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
-                placeholder="Enter your number" />
-            <br>
-            <label class="label font-semibold text-base">4 Digit Pin</label>
-            <input type="password"
-                class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
-                placeholder="Enter 4 Digit Pin" />
-            <button
-                class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">Log
-                in</button>
-        </fieldset>
+        <form class="shadow-lg rounded-3xl w-xs p-6 -mt-8 bg-white">
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend font-semibold text-xl text-center">Log in</legend>
+                <label class="label font-semibold text-base">Mobile Number</label>
+                <input type="text" id="mobileNumber"
+                    class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
+                    placeholder="Enter your number" required>
+                <br>
+                <label class="label font-semibold text-base">4 Digit Pin</label>
+                <input type="password" id="pinNumber"
+                    class="input rounded-3xl text-sm focus:outline-none focus:ring-1 focus:ring-[#0874F2]"
+                    placeholder="Enter 4 Digit Pin" required>
+                <button type="submit" id="login-btn"
+                    class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">Log
+                    in</button>
+            </fieldset>
+        </form>
     </section>
+    <script src="scripts/login.js"></script>
 </body>
 
 </html>
