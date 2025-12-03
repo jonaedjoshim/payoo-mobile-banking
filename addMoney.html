@@ -25,7 +25,7 @@
         <div class="flex items-center justify-around gap-2">
             <img src="assets/Group.png" alt="logo">
             <div>
-                <h3 class="font-extrabold text-xl mb-2">$4500</h3>
+                <h3 id="availableBalance" class="font-extrabold text-xl mb-2">$4500</h3>
                 <p class="font-medium broder border-[#14141480]">Available Balance</p>
             </div>
         </div>
@@ -80,27 +80,33 @@
             </div>
             <fieldset class="fieldset rounded-3xl bg-[#F4F5F7] p-6 mt-4 w-full">
                 <label class="label font-semibold text-base ml-1">Select A Bank</label>
-                <select class="select w-full rounded-3xl mb-3">
-                    <option disabled selected>Select Bank</option>
-                    <option>DBBL</option>
-                    <option>Islami Bank</option>
-                    <option>MidLand Bank</option>
+                <select id="selectBank" class="select w-full rounded-3xl mb-3 cursor-pointer">
+                    <option value="" disabled selected>Select Bank</option>
+                    <option value="DBBL">DBBL</option>
+                    <option value="Islami Bank">Islami Bank</option>
+                    <option value="MidLand Bank">MidLand Bank</option>
                 </select>
                 <label class="label font-semibold text-base ml-1">Bank Account Number</label>
-                <input type="text" class="input rounded-3xl w-full mb-3 text-sm"
-                    placeholder="Enter your 11 digit account number" />
+                <input type="tel" id="bankAccountNumber" class="input rounded-3xl w-full mb-3 text-sm"
+                    placeholder="Enter your 11 digit account number" required maxlength="11">
+
                 <label class="label font-semibold text-base ml-1">Amount to Add</label>
-                <input type="text" class="input rounded-3xl w-full mb-3 text-sm"
-                    placeholder="Enter your amount to deposit" />
+                <input type="tel" id="amountToAdd" class="input rounded-3xl w-full mb-3 text-sm"
+                    placeholder="Enter your amount to deposit" required>
+
                 <label class="label font-semibold text-base ml-1 ">Pin</label>
-                <input type="password" class="input rounded-3xl w-full text-sm" placeholder="Enter your 4 Digit Pin" />
-                <button
-                    class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">Add
-                    Money</button>
+                <input type="password" id="pinNumber" class="input rounded-3xl w-full text-sm"
+                    placeholder="Enter your 4 Digit Pin" required maxlength="4">
+
+                <button type="button" id="addMoneyBtn"
+                    class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">
+                    Add Money
+                </button>
             </fieldset>
         </section>
     </main>
     <script src="scripts/welcome.js"></script>
+    <script src="scripts/addMoney.js"></script>
 </body>
 
 </html>
