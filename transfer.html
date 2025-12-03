@@ -29,7 +29,7 @@
                 <p class="font-medium broder border-[#14141480]">Available Balance</p>
             </div>
         </div>
-        <button class="btn btn-outline broder border-[#14141480]">Log Out <i
+        <button id="logOut" class="btn btn-outline broder border-[#14141480]">Log Out <i
                 class="fa-solid fa-arrow-right-from-bracket"></i>
         </button>
     </nav>
@@ -41,30 +41,36 @@
                 secure, and hassle-free.</p>
         </div>
         <div class="grid grid-cols-3 gap-5 px-6">
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
+            <button id="addMoney"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/wallet1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Add Money</p>
-            </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
+            </button>
+            <button id="cashOut"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/send1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Cashout</p>
-            </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center selected rounded-lg hover:shadow-lg">
+            </button>
+            <button id="transfer"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center selected rounded-lg hover:shadow-lg">
                 <img src="assets/money1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Transfer Money</p>
-            </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
+            </button>
+            <button id="bonus"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/bonus1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Get Bonus</p>
-            </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
+            </button>
+            <button id="payBill"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg hover:shadow-lg">
                 <img src="assets/purse1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Pay Bill</p>
-            </div>
-            <div class="py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg  hover:shadow-lg">
+            </button>
+            <button id="transactions"
+                class="cursor-pointer py-5 border border-[#14141480] flex flex-col gap-2 items-center rounded-lg  hover:shadow-lg">
                 <img src="assets/transaction1.png" alt="" class="size-6">
                 <p class="font-medium text-sm">Transactions</p>
-            </div>
+            </button>
         </div>
     </header>
     <main>
@@ -74,17 +80,12 @@
             </div>
             <fieldset class="fieldset rounded-3xl bg-[#F4F5F7] p-6 mt-4 w-full">
                 <label class="label font-semibold text-base ml-1">User Number</label>
-                <input type="text"
-                    class="input rounded-3xl w-full mb-3 text-sm"
-                    placeholder="Enter receiver number" />
+                <input type="text" class="input rounded-3xl w-full mb-3 text-sm" placeholder="Enter receiver number" />
                 <label class="label font-semibold text-base ml-1">Amount</label>
-                <input type="text"
-                    class="input rounded-3xl w-full mb-3 text-sm"
+                <input type="text" class="input rounded-3xl w-full mb-3 text-sm"
                     placeholder="Enter your amount to transfer" />
                 <label class="label font-semibold text-base ml-1 ">Pin</label>
-                <input type="password"
-                    class="input rounded-3xl w-full text-sm"
-                    placeholder="Enter your 4 Digit Pin" />
+                <input type="password" class="input rounded-3xl w-full text-sm" placeholder="Enter your 4 Digit Pin" />
                 <button
                     class="btn btn-neutral bg-[#0874F2] border-none rounded-3xl mt-4 text-white text-base font-semibold">
                     CashOut
@@ -92,6 +93,7 @@
             </fieldset>
         </section>
     </main>
+    <script src="scripts/welcome.js"></script>
 </body>
 
 </html>
